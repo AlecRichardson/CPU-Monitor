@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="awrnndcpumonitorfxml.FXMLDocumentController">
+    <children>
+      <Button fx:id="start" layoutX="126.0" layoutY="514.0" mnemonicParsing="false" onAction="#startButtonAction" text="Start" textFill="#07ed0a" />
+      <Button fx:id="record" layoutX="276.0" layoutY="514.0" mnemonicParsing="false" onAction="#recordButtonAction" text="Record" textFill="#1800f5" />
+      <VBox layoutX="103.0" layoutY="395.0">
+         <children>
+            <Label fx:id="record1" alignment="BOTTOM_CENTER" layoutX="91.0" layoutY="402.0" text="--.--%">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="record2" alignment="BOTTOM_CENTER" layoutX="91.0" layoutY="437.0" text="--.--%">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="record3" alignment="BOTTOM_CENTER" layoutX="91.0" layoutY="472.0" text="--.--%">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fx:id="guage" fitHeight="200.0" fitWidth="200.0" layoutX="128.0" layoutY="103.0">
+         <image>
+            <Image url="@gauge.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dial" fitHeight="200.0" fitWidth="200.0" layoutX="128.0" layoutY="103.0" rotate="-135.0">
+         <image>
+            <Image url="@dial.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="CPUdigital" alignment="CENTER" layoutX="134.0" layoutY="283.0" text="--.--%">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="27.0" text="CPU Monitor" textFill="#302dda">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
